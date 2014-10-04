@@ -23,16 +23,8 @@
 
   <ul>
   {% for deet in form.details %}
-    <li>{{ deet }} {{ deet.label }}</li>
+    <li><input type="checkbox" name="{{ deet }}" /> {{ deet.label }}</li>
   {% endfor %}
-  </ul>
-
-  <ul>
-    <li>your personnel file;</li>
-    <li>emails between ‘A’ and ‘B’ (between 1/6/11 and 1/9/11);</li>
-    <li>your medical records (between 2006 &amp; 2009) held by Dr ‘C’ at ‘D’ hospital;</li>
-    <li>CCTV camera situated at (‘E’ location) on 23/5/12 between 11am and 5pm;</li>
-    <li>copies of statements (between 2006 &amp; 2009) held in account number xxxxx).]</li>
   </ul>
 
   <p>If you need any more information from me, or a fee, please let me know as soon as possible.</p>
