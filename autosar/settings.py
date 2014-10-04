@@ -28,6 +28,8 @@ TEMPLATE_DIRS = (
 	"request/templates",
 	)
 
+STATICFILES_DIRS = ( 'static/', )
+
 ALLOWED_HOSTS = []
 
 

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>{% block title %}Main{% endblock %} :: ORG Subject Access Request</title>
+    <!-- Bootstrap -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="/static/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <style type="text/css">
+      body { text-align: left; }
+      address { display: block; width: 100%; text-align: right; }
+    </style>
+  </head>
+<body>
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <h1 class="text-center">ORG AutoSAR</h1>
+      {% block content %}
+      <p>Body</p>
+      {% endblock content %}
+      <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+      <script src="/static/jquery.min.js"></script>
+      <!-- Include all compiled plugins (below), or include individual files as needed -->
+      <script src="/static/bootstrap/js/bootstrap.min.js"></script>
+    </div>
+  </div>
+  <div class="row">
+    <div class="debug" style="text-align: left">
+      <pre>DEBUG: {{ debug }}</pre>
+    </div>
+  </div>
+</div>
+</body>
+</html>
