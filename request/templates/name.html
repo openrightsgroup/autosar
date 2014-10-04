@@ -23,7 +23,7 @@
 
   <ul>
   {% for deet in form.details %}
-    <li><input type="checkbox" name="{{ deet }}" /> {{ deet.label }}</li>
+    <li><input type="checkbox" name="{{ deet }}" checked=checked /> {{ deet.label }}</li>
   {% endfor %}
   </ul>
 
