@@ -22,9 +22,9 @@
   <p>Please supply the information about me I am entitled to under the Data Protection Act 1998 relating to:</p>
 
   <ul>
-  {{ for deet in form.details }}
-    {{ form.details }} {{ form.details.label }}
-  {{ endfor }}
+  {% for deet in form.details %}
+    <li>{{ deet }} {{ deet.label }}</li>
+  {% endfor %}
   </ul>
 
   <ul>
