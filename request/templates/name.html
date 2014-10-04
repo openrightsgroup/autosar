@@ -1,5 +1,30 @@
 <form action="/your-name/" method="post">
-    {% csrf_token %}
-    {{ form }}
-    <input type="submit" value="Submit" />
+  {% csrf_token %}
+  {{ form }}
+
+  <p>Dear Sir or Madam,</p>
+
+  <p>RE: Subject access request</p>
+
+  <p>[Your full name and address and any other details to help identify you and the information you want.]</p>
+
+  <p>Please supply the information about me I am entitled to under the Data Protection Act 1998 relating to: [give specific details of the information you want, for example.</p>
+
+  <ul>
+    <li>your personnel file;</li>
+    <li>emails between ‘A’ and ‘B’ (between 1/6/11 and 1/9/11);</li>
+    <li>your medical records (between 2006 &amp; 2009) held by Dr ‘C’ at ‘D’ hospital;</li>
+    <li>CCTV camera situated at (‘E’ location) on 23/5/12 between 11am and 5pm;</li>
+    <li>copies of statements (between 2006 &amp; 2009) held in account number xxxxx).]</li>
+  </ul>
+
+  <p>If you need any more information from me, or a fee, please let me know as soon as possible.</p>
+
+  <p>It may be helpful for you to know that a request for information under the Data Protection Act 1998 should be responded to within 40 days.</p>
+
+  <p>If you do not normally deal with these requests, please pass this letter to your Data Protection Officer. If you need advice on dealing with this request, the Information Commissioner’s Office can assist you and can be contacted on 0303 123 1113 or at www.ico.org.uk</p>
+
+  <p>Yours faithfully,</p>
+  <p>[Signature]</p>
+  <input type="submit" value="Submit" />
 </form>
